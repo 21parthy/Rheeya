@@ -1,0 +1,6 @@
+{
+  "name": "A Proposal for Rheeya",
+  "description": "A playful, romantic, and deeply personalized proposal page asking Rheeya out on a date to Ahmedabad.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

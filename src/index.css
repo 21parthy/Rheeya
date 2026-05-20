@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playpen+Sans:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  --font-cursive: "Playpen Sans", cursive;
+}
+
+/* Custom background animation or scroll smoothing */
+body {
+  font-family: var(--font-sans);
+  background-color: #FDFBF7; /* Cozy warm cream/beige background from theme */
+  color: #4A4A4A; /* Soft charcoal ink */
+  overflow-x: hidden;
+}
+
+/* Beautiful custom animations for petals or hearts falling */
+@keyframes fall {
+  0% {
+    transform: translateY(-5%) rotate(0deg);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  90% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(105vh) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.animate-fall {
+  animation: fall 6s linear infinite;
+}
